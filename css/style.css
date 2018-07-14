@@ -1357,9 +1357,9 @@ input, textarea {
   input.code, textarea.code {
     font-family: "source-code-pro", monospace; }
   input:focus, textarea:focus {
-    border-color: #2A735B;
+    border-color: #802e65;
     outline: none;
-    box-shadow: 0 0 5px 1px #359173; }
+    box-shadow: 0 0 5px 1px #5a2047; }
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -1380,11 +1380,11 @@ button, a.button {
   padding: 0.6em 0.9em;
   transition: all 0.3s ease-in-out; }
   button:hover, a.button:hover {
-    border-color: #2A735B;
-    color: #2A735B; }
+    border-color: #802e65;
+    color: #802e65; }
     button:hover.emphasis, a.button:hover.emphasis {
       color: white;
-      background-color: #2A735B; }
+      background-color: #802e65; }
   button[disabled], button[disabled]:hover, a.button[disabled], a.button[disabled]:hover {
     color: #b0e2d2;
     border-color: #b0e2d2; }
