@@ -1,3 +1,15 @@
+.w-layout-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+
 body {
   background-color: #fff;
   font-family: Inter, sans-serif;
@@ -35,7 +47,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  padding: 60px 3% 80px;
+  margin-bottom: 40px;
+  padding: 20px 3%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -68,6 +81,7 @@ a {
   display: flex;
   width: 100%;
   max-width: 1140px;
+  margin-top: 60px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -97,16 +111,21 @@ a {
 .paragraph {
   max-width: 600px;
   margin-bottom: 48px;
-  color: rgba(31, 34, 57, 0.69);
+  color: #1f1f1f;
   font-size: 17px;
   line-height: 1.4;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
 }
 
 .paragraph.left-align {
   margin-bottom: 0px;
+  color: #1f1f1f;
   text-align: left;
+}
+
+.paragraph.left-align.social-link {
+  margin-bottom: 20px;
 }
 
 .nav-bar {
@@ -335,6 +354,7 @@ a {
 
 .service-title {
   margin-bottom: 12px;
+  font-family: 'Playfair Display', sans-serif;
   color: #17171b;
   font-size: 17px;
   font-weight: 700;
@@ -356,7 +376,7 @@ a {
   color: #99a1ba;
   font-size: 10px;
   line-height: 12px;
-  text-align: center;
+  text-align: left;
 }
 
 .divider {
@@ -383,7 +403,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  padding: 100px 3%;
+  padding: 100px 3% 10px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -392,18 +412,25 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #fafafa;
+  background-color: #fff;
+  box-shadow: inset 1px 1px 3px 0 rgba(0, 0, 0, 0.19);
 }
 
 .content-h2 {
   margin-top: 0px;
   margin-bottom: 16px;
+  font-family: 'Playfair Display', sans-serif;
   color: #18183a;
 }
 
 .content-h2.content-h2-centre {
+  font-family: 'Playfair Display', sans-serif;
   color: #18183a;
   text-align: center;
+}
+
+.content-h2.feature-heading {
+  font-size: 38px;
 }
 
 .feature-image-div {
@@ -412,11 +439,6 @@ a {
 
 .feature-image {
   overflow: hidden;
-}
-
-.feature-image.pic-3 {
-  -webkit-filter: brightness(169%);
-  filter: brightness(169%);
 }
 
 .ribbon {
@@ -982,7 +1004,7 @@ a {
 .hero-paragraph {
   max-width: 720px;
   margin-bottom: 48px;
-  color: rgba(31, 34, 57, 0.69);
+  color: #1f1f1f;
   font-size: 18px;
   line-height: 1.4;
   font-weight: 400;
@@ -990,9 +1012,12 @@ a {
 }
 
 .hero-h1 {
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', sans-serif;
   color: #18183a;
   font-size: 50px;
   line-height: 1;
+  font-weight: 400;
 }
 
 .hero-overline {
@@ -1036,7 +1061,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  padding: 60px 3%;
+  padding: 0px 3%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1246,6 +1271,10 @@ a {
   font-weight: 600;
 }
 
+.title-wrap {
+  margin-bottom: 10px;
+}
+
 .title-wrap.flex-centre {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1295,6 +1324,48 @@ a {
 
 .field-label-2 {
   color: #5a2047;
+}
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 140px;
+  background-image: url('../images/50531547_2122374184467503_7464673935204810752_o.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section.hero-image-wrapper {
+  margin-top: 0px;
+  padding-top: 220px;
+  padding-bottom: 220px;
+  background-image: url('../images/image_section.png');
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.section.hero-image-wrapper-copy {
+  margin-top: 0px;
+  padding-top: 220px;
+  padding-bottom: 220px;
+  background-image: url('../images/pic2.png');
+  background-position: 50% 60%;
+  background-size: cover;
+  -webkit-filter: brightness(161%);
+  filter: brightness(161%);
+}
+
+.link-2 {
+  color: #5a1f47;
+  font-weight: 600;
+}
+
+.paragraph-3 {
+  width: 50%;
+}
+
+.grid {
+  grid-template-areas: "Area Area-2";
 }
 
 @media screen and (max-width: 991px) {
