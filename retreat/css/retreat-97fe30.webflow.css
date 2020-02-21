@@ -804,9 +804,30 @@ a {
   margin-right: 12px;
   margin-bottom: 0px;
   padding-left: 27px;
-  border-radius: 100px;
+  border-radius: 0px;
+  background-color: #b4b4b4;
   color: #17171b;
   font-size: 15px;
+}
+
+.newsletter-field:focus {
+  color: #fff;
+}
+
+.newsletter-field::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.newsletter-field:-ms-input-placeholder {
+  color: #fff;
+}
+
+.newsletter-field::-ms-input-placeholder {
+  color: #fff;
+}
+
+.newsletter-field::placeholder {
+  color: #fff;
 }
 
 .newsletter-field.newsletter-small {
@@ -1065,7 +1086,7 @@ a {
 .send-button {
   margin-top: 0px;
   padding: 16px 45px;
-  border-radius: 100px;
+  border-radius: 0px;
   background-color: #fff;
   color: #17171b;
   font-size: 15px;
@@ -1247,6 +1268,33 @@ a {
 
 .paragraph-2 {
   color: #505050;
+}
+
+.form-block-2 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+
+.text-field {
+  width: 100%;
+}
+
+.div-block {
+  width: 50%;
+}
+
+.submit-button {
+  background-color: #006ecf;
+}
+
+.field-label {
+  color: #5a2047;
+}
+
+.field-label-2 {
+  color: #5a2047;
 }
 
 @media screen and (max-width: 991px) {
