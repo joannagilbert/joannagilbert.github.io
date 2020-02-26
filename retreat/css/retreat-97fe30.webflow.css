@@ -121,7 +121,7 @@ a {
 .paragraph.left-align {
   margin-bottom: 0px;
   color: #1f1f1f;
-  font-size: 12px;
+  font-size: 14px;
   text-align: left;
 }
 
@@ -1426,6 +1426,27 @@ a {
   font-size: 11px;
 }
 
+.paragraph-copy {
+  max-width: 600px;
+  margin-bottom: 48px;
+  color: #1f1f1f;
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 400;
+  text-align: left;
+}
+
+.paragraph-copy.left-align {
+  margin-bottom: 0px;
+  color: #1f1f1f;
+  font-size: 12px;
+  text-align: left;
+}
+
+.paragraph-copy.left-align.social-link {
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 991px) {
   .nav-bar {
     padding-right: 3px;
@@ -1734,6 +1755,12 @@ a {
   .section.hero-image-wrapper-copy {
     padding-bottom: 140px;
     background-size: cover;
+  }
+  .paragraph-copy {
+    font-size: 12px;
+  }
+  .paragraph-copy.left-align {
+    font-size: 14px;
   }
 }
 
