@@ -1147,6 +1147,7 @@ a {
   -webkit-transition: all 250ms ease;
   transition: all 250ms ease;
   text-decoration: none;
+  cursor: default;
 }
 
 .services-grid-block-02:hover {
