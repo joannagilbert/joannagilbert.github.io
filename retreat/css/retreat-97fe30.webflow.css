@@ -81,7 +81,7 @@ a {
   display: flex;
   width: 100%;
   max-width: 1140px;
-  margin-top: 60px;
+  margin-top: 0px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1338,7 +1338,8 @@ a {
 }
 
 .section.hero-image-wrapper {
-  margin-top: 0px;
+  min-height: 500px;
+  margin-top: -30px;
   padding-top: 220px;
   padding-bottom: 220px;
   background-image: url('../images/image_section.png');
@@ -1545,6 +1546,12 @@ a {
   .menu-button.w--open {
     background-color: hsla(0, 0%, 100%, 0.17);
   }
+  .section.hero-image-wrapper {
+    min-height: auto;
+    margin-top: auto;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1650,7 +1657,8 @@ a {
   }
   .section.hero-image-wrapper {
     padding-top: 60px;
-    background-size: 800px;
+    padding-bottom: 140px;
+    background-size: cover;
   }
   .section.hero-image-wrapper-copy {
     padding-top: 0px;
@@ -1748,10 +1756,12 @@ a {
     padding: 10px;
   }
   .section.hero-image-wrapper {
+    height: 50px;
+    min-height: 200px;
     padding-top: 60px;
-    padding-bottom: 60px;
-    background-position: 45% 50%;
-    background-size: 400px;
+    padding-bottom: 93px;
+    background-position: 50% 50%;
+    background-size: cover;
   }
   .section.hero-image-wrapper-copy {
     padding-bottom: 140px;
